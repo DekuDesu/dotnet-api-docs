@@ -1478,6 +1478,7 @@
         <exception cref="T:System.ArgumentException">
           <paramref name="keyHandle" /> is invalid or malformed, or it is already closed. This exception is also thrown if the key is an ephemeral key that is created by the common language runtime (CLR), but the <see cref="F:System.Security.Cryptography.CngKeyHandleOpenOptions.EphemeralKey" /> value is not specified.</exception>
         <exception cref="T:System.PlatformNotSupportedException">Cryptography Next Generation (CNG) is not supported on this system.</exception>
+        <exception cref="T:Internal.Cryptography.CryptoThrowHelper.WindowsCryptographicException (0xc0000095)">This exception is thrown most notably when the <see cref="T:System.Security.Cryptography.CngKeyBlobFormat" /> selected does not match the Key's blob format, and therefor fails to import.</exception>
         <exception cref="T:System.Security.Cryptography.CryptographicException">All other errors.</exception>
       </Docs>
     </Member>
